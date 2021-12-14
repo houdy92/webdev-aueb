@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Roboto+Slab:wght@400;500&display=swap');
+/* .body {
+    background-image: url(../img/adam.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+.webdev-img {
+    width: 450px;
+    height: auto;
+}
+
+.menu, li {
+    display: inline-block;
+}
+
+.menu > li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.menu a:hover {
+    color: red;
+    font-size: 24px;
+}
+
+/* .menu> li:not(:first-child) {
+    border: 1px solid black;
+} */
+
+.webdev-header {
+    font-family: 'Roboto Slab', serif;;
+    font-size: 50px;
+    font-weight: 5  00;
+    color: #762124;
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 1px; */
+    /* border: 1px solid blue; 
+    font-style: italic;
+    text-decoration: underline; */
+}
+
+.webdev-text {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    /* font: 17px/22px Arial, Helvetica, sans-serif; */
+    color: black;
+    /* text-indent: 25px; */
+    /* text-align: justify;
+    font-weight: bold; */
+}
+
+.fa-facebook-square, .fa-twitter-square {
+    color: blue;
+    font-size: 30px;
+}
+
+.apply > a:hover {
+    color: red;
+}
+
+.apply > a:active {
+    color: green;
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 500px;
+}
+
+th {
+    color: blue;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //all here use a callback function
+        let quarterSales = [1800, 2500, 3000, 4000];
+        let netProfits = quarterSales.map(function(value){
+            return value*0.7;
+        });
+
+        document.write(netProfits.join(', ')); //define the delimiter
+        document.write('<br>');
+
+        let netProfitsGreaterThan200 = netProfits.filter((value) => value > 2000);
+        //for arrow fucntion and only one cmd return is implied by default
+        document.write(netProfitsGreaterThan200.join(', '));
+        document.write('<br>');
+        let sumOfNetProfits = netProfits.reduce(function(total, value){
+            return total + value}, 0); //0 is initial value of total
+
+        document.write(sumOfNetProfits);
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        //declare a function that has as input a parameter that is also a function
+        function embarkOnMission(embark) {
+            embark();
+        }
+
+        embarkOnMission(function() {
+            document.write('Save the princess');
+        }) // in the place of embark an anonymous functions is used here
+
+        document.write('<br');
+
+        embarkOnMission(function() {
+            document.write('Kill the Dragon');
+        })
+    </script> -->
+
+    <!-- <script>
+        function embarkOnMission(mission, embark) {
+            embark(mission);
+        }
+
+        embarkOnMission('Kill the Dragon', function(mission) {
+            document.write(mission);
+        });
+
+    </script> -->
+
+    <script>
+        let saveThePrincessMission = 'Save the Princess';
+        function saveMission(mission) {
+            document.write(mission);
+        }
+
+        function embarkOnMission(mission, embark) {
+            embark(mission);
+        }
+
+        //here we have already declared and fallback function is not anonymous
+        embarkOnMission(saveThePrincessMission, saveMission);
+
+
+    </script>
+    
+</body>
+</html>

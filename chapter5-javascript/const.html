@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euros</title>
+</head>
+<body>
+    <script>
+        const EUROS_PER_100EURO=100;
+        let euros=210;
+        let euros100;
+        let remainingEuros;
+
+        euros100 = Math.floor(euros / EUROS_PER_100EURO);
+        remainingEuros = euros % EUROS_PER_100EURO;
+
+        document.write(`${euros} euros = ${euros100} * 100euros & ${remainingEuros} euros`);
+
+    </script>
+    
+</body>
+</html>

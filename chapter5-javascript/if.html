@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If structure</title>
+</head>
+<body>
+
+    <script>
+        let isRaining = true;
+        let lightsAreOn;
+        let textLightsAreOn;
+
+/*         if (isRaining) {
+            lightsAreOn = true;
+        } else {
+            lightsAreOn = false;
+        } */
+
+        //for short instaed of if struct
+        lightsAreOn = isRaining;
+
+        //textLightsAreOn = (lightsAreOn) ? '' : 'not';
+
+        document.write(`Lights are ${textLightsAreOn = (lightsAreOn) ? '' : 'not'} on`)
+
+/*         if (lightsAreOn) {
+            document.write('Ligths are On');
+        } else {
+            document.write('Ligths are not On');
+        } */
+
+    </script>
+
+    <!-- <script>
+
+        let choise = 3;
+
+        if (choise == 1) {
+            document.write('First Choise');
+        } else if (choise == 2) {
+            document.write('Second Choise');
+        } else if (choise == 3) {
+            document.write('Third Choise');
+        } else {
+            document.write('Wrong Choise');
+        }
+
+    </script> -->
+
+<!--     <script>
+
+        let grade = 7;
+
+        if (grade >= 5) {
+            document.write('Pass - ');
+            if (grade >= 8) {
+                document.write('Excellent');
+            } else {
+                document.write('Very Well');
+            }
+        } else {
+            document.write('Fail');
+        }
+
+    </script> -->
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Driven Programming</title>
+</head>
+<body>
+    <button id='helloBtn'>Hello World</button>
+    <script>
+        let helloBtn = document.getElementById('helloBtn');
+
+        //eventlisteners are better
+        helloBtn.addEventListener('click', function() {
+            alert('Hellow World');
+        }, false);
+        //false can be omitted as it is default (see bubbling)
+
+
+       /*  helloBtn.onclick = function() {
+            alert('Hello World');
+        } */
+    </script>
+</body>
+</html>
